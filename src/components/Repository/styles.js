@@ -7,10 +7,21 @@ export const Container = styled.View`
   margin-bottom: 15px;
 `;
 
+export const HeaderContainer = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const RepoName = styled.Text`
+  color: #888;
+`;
+
 export const Name = styled.Text`
   font-size: 18px;
   font-weight: bold;
   color: #333;
+  text-transform: capitalize;
 `;
 
 export const Description = styled.Text.attrs({
@@ -21,9 +32,15 @@ export const Description = styled.Text.attrs({
   line-height: 20px;
 `;
 
+export const FooterContainer = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+`;
+
 export const Stats = styled.View`
   flex-direction: row;
-  margin-top: 15px;
 `;
 
 export const Stat = styled.View`
@@ -35,3 +52,5 @@ export const Stat = styled.View`
 export const StatCount = styled.Text`
   margin-left: 6px;
 `;
+
+export const Refresh = styled.TouchableOpacity``;

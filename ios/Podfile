@@ -8,7 +8,6 @@ target 'gitrepo_realmdb_app' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'RealmJS', :path => '../node_modules/realm'
 
   target 'gitrepo_realmdb_appTests' do
     inherit! :complete
